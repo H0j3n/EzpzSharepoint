@@ -1,5 +1,9 @@
 # EzpzSharepoint
 
+### Disclaimer
+
+Every information in here is a collection from all of the references. Anything related to Sharepoint will be updated in here.
+
 ### Information
 
 
@@ -34,7 +38,7 @@ _layouts/userdisp.aspx?Force=True&id=1
 	- "  a"
 	- "  b"
 	- "  c"
-4. You might only get a few list. So intercept the request and change MaximumEntitySuggestions to high numbers.
+4. You might only get a few list. So intercept the request using Burpsuite and change MaximumEntitySuggestions to high numbers.
 ```
 
 ### Can't access viewlsts.aspx?
@@ -55,13 +59,15 @@ _layouts/userdisp.aspx?Force=True&id=1
 - https://www.zerodayinitiative.com/blog/2021/6/1/cve-2021-31181-microsoft-sharepoint-webpart-interpretation-conflict-remote-code-execution-vulnerability
 
 2. **CVE-2021-27076**
-
 - https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-27076
 
 3. **CVE-2020-0932**
 - https://www.zerodayinitiative.com/blog/2020/4/28/cve-2020-0932-remote-code-execution-on-microsoft-sharepoint-using-typeconverters
 
-4. **CVE-2019-0604**
+4. **CVE-2020-1147**
+- https://www.exploit-db.com/exploits/48747
+
+5. **CVE-2019-0604**
 - https://www.rapid7.com/db/vulnerabilities/msft-cve-2019-0604/
 
 ### Understanding Sharepoint
@@ -70,6 +76,9 @@ _layouts/userdisp.aspx?Force=True&id=1
 - https://github.com/MicrosoftDocs/OfficeDocs-Support/tree/public/SharePoint/SharePointServer
 - https://www.sharepointdiary.com/
 - https://mstechtalk.com/sharepoint-important-urls/
+
+### Tools Related
+- https://github.com/0xdevalias/sparty
 
 ### References
 - http://www.office365security.com/sharepoint-security-policy-checklist/
