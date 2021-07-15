@@ -2,7 +2,7 @@
 
 ### Disclaimer
 
-Every information in here is a collection from all of the references. Anything related to Sharepoint will be updated in here.
+This is my note taking on Sharepoint . Every information in here is a collection from all of the references. Anything news related to Sharepoint will be updated in here.
 
 ### Information
 
