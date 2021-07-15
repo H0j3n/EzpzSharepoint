@@ -1,3 +1,5 @@
+sites/dev/_layouts/15/settings.aspx
+_layouts/15/userdisp.aspx?Force=True&ID=1
 1033
 3082
 accessdenied.aspx
@@ -28,6 +30,15 @@ alertserror.aspx
 alertswsdl.aspx
 allgrps.aspx
 _app_bin
+_app_bin/Microsoft.Office.DocumentManagement.Pages.dll
+_app_bin/Microsoft.Office.officialfileSoap.dll
+_app_bin/Microsoft.Office.Policy.Pages.dll
+_app_bin/Microsoft.Office.SlideLibrarySoap.dll
+_app_bin/Microsoft.Office.Workflow.Pages.dll
+_app_bin/Microsoft.Office.WorkflowSoap.dll
+_app_bin/Microsoft.SharePoint.ApplicationPages.dll
+_app_bin/STSSOAP.DLL
+_app_bin/layouts.sitemap
 app_browsers
 app_globalresources
 applyregionalsettings.aspx
@@ -2031,3 +2042,6 @@ _layouts/_vti_bin/wswsdl.aspx
 _layouts/_vti_inf.html
 _layouts/_vti_inf.html
 _layouts/_vti_pvt
+_layouts/15/AssetPortalBrowser.aspx
+_layouts/15/Upload.aspx
+_layouts/ClientOMUIActions/ListCreationPage.aspx
