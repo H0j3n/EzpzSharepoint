@@ -13,16 +13,41 @@
 | Wpresources | Contains configuration file for Web Parts| 
 
 ### User Enumeration
-1. Passive User Enumeration With OneDrive 
+1. Passive User Enumeration With **OneDrive **
 - https://www.trustedsec.com/blog/achieving-passive-user-enumeration-with-onedrive/
-2. Sharepoint User Enumeration In userdisp.aspx
+2. Sharepoint User Enumeration In **userdisp.aspx**
 - https://www.acunetix.com/vulnerabilities/web/sharepoint-user-enumeration/
-3. Sharepoint User Enumeration In editform.aspx
 
 ```bash
+_layouts/userdisp.aspx
+_layouts/userdisp.aspx?Force=True&id=1
+```
+3. Sharepoint User Enumeration In **editform.aspx**
 
+```bash
+-> Try check if editform.aspx can be open or not.
+-> If it can be access, follow the steps below:
+
+1. Location => /pages/forms/editform.aspx
+2. Inside Contact write any characters atleast 3 characters. Then it will list out several recommendations of users to us. One of the tricks that we found is to put 2 spaces add with one chracter.
+3. Examples:
+	- "  a"
+	- "  b"
+	- "  c"
+4. You might only get a few list. So intercept the request and change MaximumEntitySuggestions to high numbers.
 ```
 
+### Can't access viewlsts.aspx?
+
+```bash
+-> Try check if editform.aspx can be open or not.
+-> If it can be access, follow the steps below:
+
+1. Location => /pages/forms/editform.aspx
+2. Click on "Click here to insert a picture from Sharepoint"
+3. Click on browse in Hyperlink
+4. We can view the Site Content almost same like viewlsts.aspx
+```
 
 ### CVE/Exploit Related
 
@@ -43,6 +68,8 @@
 - https://sharepointmaven.com/the-anatomy-of-a-sharepoint-url/
 - https://mohitvash.wordpress.com/2011/06/17/microsoft-sharepoint-applicationpages-dll/
 - https://github.com/MicrosoftDocs/OfficeDocs-Support/tree/public/SharePoint/SharePointServer
+- https://www.sharepointdiary.com/
+- https://mstechtalk.com/sharepoint-important-urls/
 
 ### References
 - http://www.office365security.com/sharepoint-security-policy-checklist/
